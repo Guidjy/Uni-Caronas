@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo!</title>
+
+    <!--CSS do Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!--Minhas stylesheets-->
+    <link rel="stylesheet" href="css/componentes.css">
+
+    <style>
+      #section-caronas-disponiveis
+      {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md">
+      <!--Container da navbar-->
+      <div class="container-fluid justify-content-around">
+        <!--Botão do menu lateral-->
+        <a class="btn" data-bs-toggle="offcanvas" href="#menuLateral" role="button" aria-controls="menu lateral">
+          <img height="20px" src="assets/uc-icone-menu-lateral.png" alt="Abrir menu lateral">
+        </a>
+        <!--Barra de pesquiosa-->
+        <form class="d-flex">
+          <input id="barra-de-pesquisa" class="form-control me-2 rounded-3" type="search" placeholder="Pesquisar..." aria-label="Search">
+          <select id="filtro-de-pesquisa" class="form-select rounded-3" aria-label="filtro de pesquisa">
+            <option selected>Corridas</option>
+            <option value="1">Pessoas</option>
+          </select>
+        </form>
+        <!--Ícone do perfil do usuário-->
+        <a class="btn" href="perfil_usuario.html" role="button">
+          <img height="38px" src="assets/uc-icone-perfil.png" alt="perfil">          
+        </a>
+      </div>
+    </nav>
+
+    <!--Menu lateral (offcanvas)-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menu lateral">
+      <!--Logo-->
+      <div id="menu-lateral-logo" class="offcanvas-header d-flex align-items-start">
+        <img class="ms-5" width="75%" src="assets/uc-logo.png" alt="Logo">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!--lista de opções-->
+      <div class="offcanvas-body mt-5 mx-2">
+        <div class="list-group">
+          <a href="perfil_usuario.html" class="list-group-item list-group-item-action">Minhas caronas</a>
+          <a href="criar_carona.html" class="list-group-item list-group-item-action">Criar carona</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Lista de caronas disponíveis-->
+    <section id="section-caronas-disponiveis">
+      <!--container das caronas-->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h4 class="fs-3 fw-bold mb-4">Caronas Disponíveis</h4>
+          </div>
+        </div>
+        <!--banner de uma carona-->
+        <div class="row justify-content-center">
+          <a href="#" class="col-10 text-decoration-none text-reset">
+            <div class="banner-carona">
+              <div class="row justify-content-evenly align-items-end">
+                <!--foto-->
+                <div class="col-1">
+                  <img class="foto-de-perfil" height="90px" src="assets/uc-pfp-placeholder.png" alt="foto de perfil">
+                </div>
+                <!--nome, origem/destino, data-->
+                <div class="col-4">
+                  <p class="lead fs-5">Nome Completo</p>
+                  <p class="lead text-secondary">Origem → Destino</p>
+                  <p class="fw-bold fs-5">dd/mm</p>
+                </div>
+                <!--capacidade-->
+                <div class="col-4">
+                  <p class="fs-5">X/4</p>
+                </div>
+                <!--preço-->
+                <div class="col-2">
+                  <p class="fs-5">R$: XX,XX</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--placeholders-->
+        <div class="row justify-content-center">
+          <a href="#" class="col-10 text-decoration-none text-reset">
+            <div class="banner-carona">
+              <div class="row justify-content-evenly align-items-end">
+                <!--foto-->
+                <div class="col-1">
+                  <img class="foto-de-perfil" height="90px" src="assets/uc-pfp-placeholder.png" alt="foto de perfil">
+                </div>
+                <!--nome, origem/destino, data-->
+                <div class="col-4">
+                  <p class="lead fs-5">Nome Completo</p>
+                  <p class="lead text-secondary">Origem → Destino</p>
+                  <p class="fw-bold fs-5">dd/mm</p>
+                </div>
+                <!--capacidade-->
+                <div class="col-4">
+                  <p class="fs-5">X/4</p>
+                </div>
+                <!--preço-->
+                <div class="col-2">
+                  <p class="fs-5">R$: XX,XX</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="row justify-content-center">
+          <a href="#" class="col-10 text-decoration-none text-reset">
+            <div class="banner-carona">
+              <div class="row justify-content-evenly align-items-end">
+                <!--foto-->
+                <div class="col-1">
+                  <img class="foto-de-perfil" height="90px" src="assets/uc-pfp-placeholder.png" alt="foto de perfil">
+                </div>
+                <!--nome, origem/destino, data-->
+                <div class="col-4">
+                  <p class="lead fs-5">Nome Completo</p>
+                  <p class="lead text-secondary">Origem → Destino</p>
+                  <p class="fw-bold fs-5">dd/mm</p>
+                </div>
+                <!--capacidade-->
+                <div class="col-4">
+                  <p class="fs-5">X/4</p>
+                </div>
+                <!--preço-->
+                <div class="col-2">
+                  <p class="fs-5">R$: XX,XX</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="row justify-content-center">
+          <a href="#" class="col-10 text-decoration-none text-reset">
+            <div class="banner-carona">
+              <div class="row justify-content-evenly align-items-end">
+                <!--foto-->
+                <div class="col-1">
+                  <img class="foto-de-perfil" height="90px" src="assets/uc-pfp-placeholder.png" alt="foto de perfil">
+                </div>
+                <!--nome, origem/destino, data-->
+                <div class="col-4">
+                  <p class="lead fs-5">Nome Completo</p>
+                  <p class="lead text-secondary">Origem → Destino</p>
+                  <p class="fw-bold fs-5">dd/mm</p>
+                </div>
+                <!--capacidade-->
+                <div class="col-4">
+                  <p class="fs-5">X/4</p>
+                </div>
+                <!--preço-->
+                <div class="col-2">
+                  <p class="fs-5">R$: XX,XX</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+      <!--fim do container das caronas-->
+      </div>
+    </section>
+
+
+    <!--JS do Boostrap e outras dependencias-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+
+</html>

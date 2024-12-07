@@ -1,0 +1,26 @@
+/*botão de adicionar mais uma parada*/
+#adicionar-parada
+{
+  width: 100%;
+  color: #0EA5E9;
+  border: solid 1px #CBD5E1;
+  border-radius: 20px;
+}
+
+/*botãões do formulário*/
+#cancelar
+{
+  color: #0F172A;
+  background-color: white;
+}
+
+#criar-carona
+{
+  color: white;
+  background-color: #0F172A;
+}
+
+#cancelar, #criar-carona
+{
+  border: solid 1px #CBD5E1;
+}

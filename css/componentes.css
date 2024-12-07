@@ -1,0 +1,85 @@
+/*Componentes que estão em todas, ou muitas, páginas*/
+
+body
+{
+  font-size: 28;
+  color: #0F172A;
+  background-color: #F3F4F6;
+}
+
+/*Estilização da navbar*/
+
+.navbar
+{
+  /*padding*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  /*cor de fundo*/
+  background-color: #0EA5E9;
+  /*cor dos icones*/
+  color: white;
+}
+
+
+#barra-de-pesquisa
+{
+  width: 320px;
+}
+
+#filtro-de-pesquisa
+{
+  width: 140px;
+}
+
+/*Estilização do menu lateral*/
+
+#menu-lateral-logo
+{
+  background-color: #0EA5E9;
+}
+
+/*Container genérico*/
+.container-generico
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  color: #0F172A;
+  background-color: white;
+
+  border: solid 1px #CBD5E1;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px #00000040;
+}
+
+/*banner de carona*/
+.banner-carona
+{
+  /*dimensões*/
+  height: 150px;
+  /*Padding*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  /*borda*/
+  border: solid 1px #CBD5E1;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px #00000040;
+  /*cores*/
+  background-color: white;
+}
+
+.banner-carona, img
+{
+  margin-bottom: 33px;
+}
+
+#foto-do-usuario
+{
+  height: 170px;
+}
